@@ -56,7 +56,6 @@ class SplashScreen extends StatelessWidget {
               Expanded(
                 child: ElevatedButton(
                   onPressed: () {
-                    // print("Button pressed");
                     Navigator.push(
                         context,
                         MaterialPageRoute(
