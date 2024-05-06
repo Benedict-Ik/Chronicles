@@ -14,6 +14,7 @@ class NoteListState extends State<NoteList> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Color(0xFFFBC103),
         title: Text("My Notes"),
       ),
       body: getNoteListView(),
@@ -33,6 +34,7 @@ class NoteListState extends State<NoteList> {
     return ListView.builder(
       itemCount: count,
       itemBuilder: (BuildContext context, int position) {
+        // Creating a parent Card widget
         return Card(
           color: Colors.white,
           elevation: 2.0,
