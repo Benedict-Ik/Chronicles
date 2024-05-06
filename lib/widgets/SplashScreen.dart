@@ -1,3 +1,4 @@
+import 'package:chronicles/widgets/NoteList.dart';
 import 'package:flutter/material.dart';
 import 'package:chronicles/widgets/HomeScreen.dart';
 
@@ -18,7 +19,8 @@ class SplashScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
+    return Scaffold(
+        body: Padding(
       padding: EdgeInsets.symmetric(horizontal: 35.0),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -59,7 +61,8 @@ class SplashScreen extends StatelessWidget {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => HomeScreen(),
+                          // builder: (context) => HomeScreen(),
+                          builder: (context) => NoteList(),
                         ));
                   },
                   child: Text("Create a new note",
@@ -76,6 +79,6 @@ class SplashScreen extends StatelessWidget {
           )
         ],
       ),
-    );
+    ));
   }
 }
