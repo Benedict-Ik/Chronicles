@@ -1,6 +1,6 @@
+import 'package:chronicles/widgets/NoteDetails.dart';
 import 'package:chronicles/widgets/NoteList.dart';
 import 'package:flutter/material.dart';
-import 'package:chronicles/widgets/HomeScreen.dart';
 
 const double minimumPadding = 5.0;
 
@@ -62,7 +62,8 @@ class SplashScreen extends StatelessWidget {
                         context,
                         MaterialPageRoute(
                           // builder: (context) => HomeScreen(),
-                          builder: (context) => NoteList(),
+                          // builder: (context) => NoteList(),
+                          builder: (context) => NoteDetails(),
                         ));
                   },
                   child: Text("Create a new note",

@@ -1,4 +1,3 @@
-import 'package:chronicles/widgets/HomeScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:chronicles/widgets/SplashScreen.dart';
 
