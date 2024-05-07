@@ -91,7 +91,7 @@ class NoteDetailsState extends State<NoteDetails> {
                           onPressed: () {
                             debugPrint("Save button clicked");
                           },
-                          child: Text("Save", textScaleFactor: 1.5),
+                          child: Text("Save", textScaleFactor: 1.0),
                           style: ElevatedButton.styleFrom(
                               backgroundColor: Colors.green,
                               foregroundColor: Colors.white)),
@@ -104,7 +104,7 @@ class NoteDetailsState extends State<NoteDetails> {
                           onPressed: () {
                             debugPrint("Delete button clicked");
                           },
-                          child: Text("Delete", textScaleFactor: 1.5),
+                          child: Text("Delete", textScaleFactor: 1.0),
                           style: ElevatedButton.styleFrom(
                               backgroundColor: Colors.red,
                               foregroundColor: Colors.white)),
