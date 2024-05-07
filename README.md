@@ -25,7 +25,7 @@ To run the Chronicles application:
 3. Open the project in your preferred Flutter development environment.
 4. Run the application on an emulator or physical device.
 
-### Screenshots
+## Screenshots
 ![Splash Screen](<WhatsApp Image 2024-05-07 at 14.40.38_862b74e7.jpg>)
 
 ![NoteDetails](<WhatsApp Image 2024-05-07 at 14.41.37_e1706934.jpg>)
