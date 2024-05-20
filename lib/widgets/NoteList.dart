@@ -1,3 +1,4 @@
+import 'package:chronicles/widgets/NoteDetails.dart';
 import 'package:flutter/material.dart';
 
 class NoteList extends StatefulWidget {
@@ -18,9 +19,13 @@ class NoteListState extends State<NoteList> {
         title: Text("My Notes"),
       ),
       body: getNoteListView(),
+
+      // Adding FAB
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           debugPrint("FAB clicked");
+          // Function defined below
+          navToNoteDetailsPage('Add Note');
         },
         tooltip: 'Add Note',
         child: Icon(Icons.add),
@@ -48,10 +53,18 @@ class NoteListState extends State<NoteList> {
             trailing: Icon(Icons.delete, color: Colors.grey),
             onTap: () {
               debugPrint("ListTile clicked");
+              navToNoteDetailsPage('Edit Note');
             },
           ),
         );
       },
     );
+  }
+
+  // Function to nav to NoteDetails page
+  void navToNoteDetailsPage(String title) {
+    Navigator.push(context, MaterialPageRoute(builder: (context) {
+      return NoteDetails(title);
+    }));
   }
 }

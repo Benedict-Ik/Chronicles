@@ -62,8 +62,8 @@ class SplashScreen extends StatelessWidget {
                         context,
                         MaterialPageRoute(
                           // builder: (context) => HomeScreen(),
-                          // builder: (context) => NoteList(),
-                          builder: (context) => NoteDetails(),
+                          builder: (context) => NoteList(),
+                          // builder: (context) => NoteDetails(),
                         ));
                   },
                   child: Text("Create a new note",
